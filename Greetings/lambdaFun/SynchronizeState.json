@@ -1,0 +1,92 @@
+{
+    "event": {
+        "header": {
+            "namespace": "System",
+            "name": "SynchronizeState",
+            "messageId": "messageId"
+        },
+        "payload": {}
+    },
+    "context": [{
+            "header": {
+                "namespace": "System",
+                "name": "SettingsState",
+                "payloadVersion": "1"
+            },
+            "payload": {
+                "settings": [{
+                        "key": "com.amazon.alexa.characteristics.viewport.experiences",
+                        "value": "[{\"arcMinuteWidth\":\"246\",\"arcMinuteHeight\":\"144\",\"canRotate\":\"false\",\"canResize\":\"false\"}]"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.shape",
+                        "value": "RECTANGLE"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.pixelWidth",
+                        "value": "1024"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.pixelHeight",
+                        "value": "600"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.dpi",
+                        "value": "160"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.currentPixelWidth",
+                        "value": "1024"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.currentPixelHeight",
+                        "value": "600"
+                    },
+                    {
+                        "key": "com.amazon.alexa.characteristics.viewport.touch",
+                        "value": "[\"SINGLE\"]"
+                    }
+                ]
+            }
+        },
+        {
+            "header": {
+                "namespace": "SpeechSynthesizer",
+                "name": "SpeechState"
+            },
+            "payload": {
+                "token": "",
+                "offsetInMilliseconds": 0,
+                "playerActivity": "PLAYING"
+            }
+        },
+        {
+            "header": {
+                "namespace": "AudioPlayer",
+                "name": "PlaybackState"
+            },
+            "payload": {
+                "token": "",
+                "offsetInMilliseconds": 0,
+                "playerActivity": "IDLE"
+            }
+        },
+        {
+            "header": {
+                "namespace": "Alerts",
+                "name": "AlertsState"
+            },
+            "payload": {
+                "activeAlerts": [],
+                "allAlerts": []
+            }
+        },
+        {
+            "header": {
+                "namespace": "AudioFocusManager",
+                "name": "AudioFocusState"
+            },
+            "payload": {}
+        }
+    ]
+}
