@@ -7,6 +7,11 @@ exports.handler = function (event, context) {
     try {
 
         var request = event.request;
+        var session = event.request;
+
+        if (!event.session.attributes) {
+            event.session.attributes = {};
+        }
 
         /*
             i)   LaunchRequest       Ex: "Open greeter"
